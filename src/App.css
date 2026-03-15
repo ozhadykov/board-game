@@ -1,1 +1,87 @@
 @import "tailwindcss";
+
+/* ============================================
+   Base: #d4be90 (Sand Parchment)
+   ============================================ */
+
+:root {
+    /* --- Sand (base ramp) --- */
+    --sand-50: #fdf8ef;
+    --sand-100: #f5ead5;
+    --sand-200: #ead9b8;
+    --sand-400: #d4be90; /* ★ base */
+    --sand-600: #b89f70;
+    --sand-700: #8b7550;
+    --sand-800: #5c4c32;
+    --sand-900: #4a3520;
+
+    /* --- Forest Green (terrain accent) --- */
+    --forest-50: #e8f2e0;
+    --forest-100: #c0d9a8;
+    --forest-200: #8aba6a;
+    --forest-400: #5a8840;
+    --forest-600: #3a6828;
+    --forest-700: #2a5c32;
+    --forest-800: #1a3c20;
+    --forest-900: #102810;
+
+    /* --- Ocean Teal (water & depth) --- */
+    --ocean-50: #e0f2f4;
+    --ocean-100: #a8dce8;
+    --ocean-200: #60b8c8;
+    --ocean-400: #2890a8;
+    --ocean-600: #1a6880;
+    --ocean-700: #104858;
+    --ocean-800: #082838;
+    --ocean-900: #041820;
+
+    /* --- Volcano Ember (fire & danger) --- */
+    --volcano-50: #fdeee0;
+    --volcano-100: #f8c898;
+    --volcano-200: #f09848;
+    --volcano-400: #d86020;
+    --volcano-600: #b03818;
+    --volcano-700: #8b2810;
+    --volcano-800: #601808;
+    --volcano-900: #380c04;
+
+    /* --- Night Sky (dusk & darkness) --- */
+    --night-50: #e8e0f0;
+    --night-100: #b0a0d8;
+    --night-200: #7060b0;
+    --night-400: #403880;
+    --night-600: #2a2858;
+    --night-700: #1a1840;
+    --night-800: #100c28;
+    --night-900: #080818;
+
+    /* --- Semantic aliases --- */
+    --color-background: var(--sand-400);
+    --color-surface: var(--sand-100);
+    --color-surface-alt: var(--sand-200);
+    --color-text-primary: var(--sand-900);
+    --color-text-muted: var(--sand-700);
+    --color-text-faint: var(--sand-600);
+    --color-border: var(--sand-600);
+
+    --color-terrain: var(--forest-600);
+    --color-terrain-light: var(--forest-200);
+    --color-water: var(--ocean-400);
+    --color-water-deep: var(--ocean-700);
+    --color-fire: var(--volcano-400);
+    --color-fire-dark: var(--volcano-700);
+    --color-night: var(--night-600);
+    --color-night-deep: var(--night-900);
+
+    /* --- Combination themes (as references) --- */
+    /* Day / Parchment:    --sand-50, --sand-400, --sand-700, --sand-900, --forest-600 */
+    /* Night / Deep Sea:   --ocean-900, --ocean-700, --ocean-400, --sand-400, --volcano-200 */
+    /* Twilight / Magic:   --night-900, --night-600, --night-200, --sand-400, --volcano-600 */
+    /* Jungle / Dense:     --forest-900, --forest-800, --forest-400, --sand-400, --volcano-400 */
+
+}
+
+/* Base */
+body {
+    background-color: var(--color-background);
+}
